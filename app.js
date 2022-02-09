@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/api/students', routes);
 
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index')
 })
 
@@ -28,6 +28,8 @@ app.get('/registration', (req, res) =>{
 app.get('/login', (req, res) => {
     res.render('login')
 })
+
+app.use('/img', express.static(path.join(__dirname,'public/img')))
 
 app.set('view engine', 'ejs')
 

@@ -4,7 +4,9 @@ h1 {
   }
   
   body {
-    background-color: coral;
+    background-image: url('/img/photopics.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   form {
@@ -49,4 +51,8 @@ h1 {
   
   .s-page h1 {
     text-align: center;
+  }
+  input{
+    background-color: transparent;
+    outline: 2px solid rgb(255, 255, 255);
   }
